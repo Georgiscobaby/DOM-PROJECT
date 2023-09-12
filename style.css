@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/Images/an1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.item{
+    text-align: center;
+    box-shadow: #ff7070 5px 5px 5px 5px;
+    
+}
+
+.item img{
+    height: 300px;
+    width: 300px;
+
+}
+.item img:hover{
+    width: 330px;
+    height: 330px;
+}
+
+.navbar-nav {
+    margin-left: 500px;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+
+#total-price{
+    text-align: center;
+    font-size: xx-large;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color:red;
+    margin-top: 20px;
+}
+
+.collections{
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.navbar-brand{
+    color: red;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.navbar-nav.nav-link{
+    color: red;
+}
+
+/* Style the heart-shaped button */
+
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    color: orangered;
+    font-size: larger;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+.display-4{
+    background-color:orangered;
+    color: white;
+
+}
+
+.lead{
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* Common styles for both pages (in style.css) */
+body {
+    font-family: Arial, sans-serif;
+    /* Other common styles */
+}
+
+/* Styles for the landing page */
+body.landing-page {
+    background-image: url("/Images/an12.avif"); 
+    background-size:cover;
+    background-repeat: repeat-y;
+    
+}
+
+/* Styles for the index page */
+body.index-page {
+    background-image: url("/Images/an1.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* Default style for the heart-shaped button */
+.like-button.heart {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    position: relative;
+    margin: 5px;
+    transition: background-color 0.3s ease; /* Add transition for color change */
+}
+
+/* Style for the liked button */
+.like-button.heart.liked {
+    background-color: #ff7070; /* Change to a brighter color for liked state */
+}
+
+.like-button.heart {
+    width: 30px;
+    height: 30px;
+    background-color: red; /* Change the color as desired */
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    position: relative;
+    margin: 5px; /* Adjust the margin as needed */
+}
+
+.like-button.heart::before,
+.like-button.heart::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: red; /* Change the color as desired */
+    border-radius: 50%;
+    position: absolute;
+}
+
+.like-button.heart::before {
+    top: -15px;
+    left: 0;
+}
+
+.like-button.heart::after {
+    top: 0;
+    left: 15px;
+}
+
+.remove-button{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+    
